@@ -173,27 +173,6 @@ class Level:
                     return (x, y)
         return None
     
-    # Dans la classe Level, ajoutez cette méthode
-    # def spawn_enemies(self, layout, num_enemies=5):
-    #     """Fait apparaître un certain nombre d'ennemis sur des cases marchables."""
-    #     walkable_positions = []
-
-    #     # Parcourir le layout pour trouver toutes les cases marchables
-    #     for row_index, row in enumerate(layout):
-    #         for col_index, col in enumerate(row):
-    #             if col == '0' and self.is_surrounded_by_floor(layout, row_index, col_index):
-    #                 x = col_index * TILESIZE
-    #                 y = row_index * TILESIZE
-    #                 walkable_positions.append((x, y))
-
-    #     # Mélanger les positions pour garantir une répartition aléatoire
-    #     random.shuffle(walkable_positions)
-
-    #     # Faire apparaître les ennemis à partir des positions disponibles
-    #     for _ in range(min(num_enemies, len(walkable_positions))):
-    #         pos = walkable_positions.pop()  # Retirer une position pour éviter les doublons
-    #         Enemy(pos, [self.visible_sprites, self.obstacle_sprites], self.obstacle_sprites, self.player)
-
 
     def spawn_enemies(self, layout, num_enemies=5):
         walkable_positions = []

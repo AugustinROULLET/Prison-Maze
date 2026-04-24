@@ -1,3 +1,3 @@
-# IC06_Project
+Prison Maze,
 
-migong nu wo
+developed by Wang Leer, Lescieux Jean and Roullet Augustin.
